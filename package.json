@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/main.ts",
-    "start": "node src/main.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/main.ts",
+    "start": "node dist/main.js",
     "prepare": "husky",
-    "test": "node src/test.js"
+    "build":"npx tsc"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,11 @@
   },
   "type": "module",
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.5"
+    "lint-staged": "^17.0.5",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   }
 }
