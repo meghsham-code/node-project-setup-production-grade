@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/main.ts",
-    "start": "node src/main.ts"
+    "start": "node src/main.ts",
+    "prepare": "husky",
+    "test": "node src/test.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,9 @@
       "onFail": "download"
     }
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5"
+  }
 }
