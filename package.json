@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec node --loader ts-node/esm src/main.ts",
-    "start": "node dist/main.js",
+    "dev": "nodemon --exec node --loader ts-node/esm src/server.ts",
+    "start": "node dist/server.js",
     "prepare": "husky",
     "build":"npx tsc"
   },
