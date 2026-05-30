@@ -52,29 +52,21 @@ export default defineConfig(
     },
 
     rules: {
+      "no-console": "warn",
+      "no-var": "error",
+      "no-duplicate-imports": "error",
+      "no-unused-expressions": "error",
+      "prefer-const": "error",
+      "@typescript-eslint/explicit-function-return-type": "warn",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
           argsIgnorePattern: "^_",
         },
       ],
-
-      "@typescript-eslint/no-explicit-any": "error",
-
-      "@typescript-eslint/consistent-type-imports": "error",
-
-      "@typescript-eslint/explicit-function-return-type": "warn",
-
-      "prefer-const": "error",
-
-      "no-var": "error",
-
-      "no-duplicate-imports": "error",
-
-      "no-unused-expressions": "error",
-
       semi: ["error", "always"],
-
       quotes: [
         "error",
         "double",
@@ -82,10 +74,7 @@ export default defineConfig(
           avoidEscape: true,
         },
       ],
-
       indent: ["error", 2],
-
-      "no-console": "warn",
     },
   }
 );
